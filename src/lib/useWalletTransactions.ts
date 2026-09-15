@@ -225,13 +225,21 @@ export function useWalletTransactions(address: Address | undefined) {
           let name = `Real Asset #${tokenId}`;
           try {
             const [assetData, tokenUri] = await Promise.all([
+<<<<<<< HEAD
               client.readContract({
+=======
+              publicClient.readContract({
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
                 address: CONTRACT_ADDRESSES.assetNFT,
                 abi: ASSET_NFT_ABI,
                 functionName: "assetData",
                 args: [tokenId],
               }),
+<<<<<<< HEAD
               client.readContract({
+=======
+              publicClient.readContract({
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
                 address: CONTRACT_ADDRESSES.assetNFT,
                 abi: ASSET_NFT_ABI,
                 functionName: "tokenURI",

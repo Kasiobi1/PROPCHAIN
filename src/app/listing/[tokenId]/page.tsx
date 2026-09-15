@@ -206,7 +206,11 @@ export default function ListingDetailPage({
       })
       .then((result) => {
         if (!cancelled)
+<<<<<<< HEAD
           setHoldData(result as unknown as readonly [string, string, bigint, bigint, number, number, number]);
+=======
+          setHoldData(result as readonly [string, string, bigint, bigint, number, number, number]);
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
       })
       .catch(() => {
         if (!cancelled) setHoldData(undefined);
@@ -401,7 +405,10 @@ export default function ListingDetailPage({
   // transaction — awkward to chain N purchases through without a manual
   // queue. formatWriteError still applies to whatever it throws.
   async function handleBuyNow() {
+<<<<<<< HEAD
     if (!listing) return;
+=======
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
     if (!isConnected || !address) {
       setActionFeedback("Connect a wallet to complete this purchase.");
       return;
@@ -451,7 +458,10 @@ export default function ListingDetailPage({
   // Marketplace, so this will revert on a freshly-minted test asset unless
   // the seller separately approves EscrowHold too.
   function handleLockFunds() {
+<<<<<<< HEAD
     if (!listing) return;
+=======
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
     if (!isConnected || !address) {
       setActionFeedback("Connect a wallet to start a hold.");
       return;
@@ -522,7 +532,10 @@ export default function ListingDetailPage({
   // simulation.
   function handleMakeOffer(e: React.FormEvent) {
     e.preventDefault();
+<<<<<<< HEAD
     if (!listing) return;
+=======
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
     if (!offerAmount || Number(offerAmount) <= 0) {
       setActionFeedback("Enter a valid offer amount first.");
       return;

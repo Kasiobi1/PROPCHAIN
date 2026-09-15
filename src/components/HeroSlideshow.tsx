@@ -26,7 +26,11 @@ const SLIDES: Slide[] = [
     cta: "See what's new",
     href: "/?sort=newest",
   },
+<<<<<<< HEAD
   {
+=======
+   {
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
     eyebrow: "Now on Nimiq Pay",
     title: "PropChain is a Nimiq Pay Mini App",
     body: "Connect your wallet, verify, and trade real-world assets right inside Nimiq Pay — no separate app, no extra install.",

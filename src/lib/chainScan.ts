@@ -151,12 +151,16 @@ export async function scanLogsInChunks<T>(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   args: any,
   onProgress: (p: ScanProgress) => void,
+<<<<<<< HEAD
   // Same reasoning as event/args above: viem's getLogs overload resolution
   // picks the generic Log signature (no `args`) when event/args are `any`,
   // so decode's log param is typed loosely too rather than fighting viem's
   // overloads — callers cast log.args to the shape they know it has.
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   decode: (log: any) => T
+=======
+  decode: (log: Awaited<ReturnType<ChainPublicClient["getLogs"]>>[number]) => T
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
 ): Promise<ScanResult<T>> {
   const deploymentBlock = await (deploymentBlockPromise ??= findDeploymentBlock(client));
   const currentBlock = await client.getBlockNumber();

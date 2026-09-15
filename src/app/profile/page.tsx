@@ -59,7 +59,11 @@ export default function ProfilePage() {
     setBanner,
     resetAvatar,
     resetBanner,
+<<<<<<< HEAD
   } = useProfileImages(address ?? undefined);
+=======
+  } = useProfileImages(address);
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
 
   function readAsDataUrl(file: File, onLoad: (dataUrl: string) => Promise<string | null>) {
     const reader = new FileReader();

@@ -810,7 +810,11 @@ export default function ListAssetPage() {
                       Skip
                     </button>
                   </div>
+<<<<<<< HEAD
                   {!!approveEscrowError && (
+=======
+                  {approveEscrowError && (
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
                     <p className="mt-3 text-xs text-clay">{formatError(approveEscrowError)}</p>
                   )}
                   {(isApproveEscrowConfirmed || isEscrowApproved) && (

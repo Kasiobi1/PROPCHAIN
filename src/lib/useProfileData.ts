@@ -74,7 +74,11 @@ export function useProfileData() {
     let cancelled = false;
     setIsLoadingChain(true);
 
+<<<<<<< HEAD
     async function run(address: `0x${string}`) {
+=======
+    async function run() {
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
       const nextTokenId = (await client!.readContract({
         address: CONTRACT_ADDRESSES.assetNFT,
         abi: ASSET_NFT_ABI,
@@ -227,7 +231,11 @@ export function useProfileData() {
       }
     }
 
+<<<<<<< HEAD
     run(address).finally(() => {
+=======
+    run().finally(() => {
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
       if (!cancelled) setIsLoadingChain(false);
     });
 

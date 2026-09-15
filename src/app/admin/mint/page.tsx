@@ -550,7 +550,11 @@ export default function AdminMintPage() {
                           ? "Approving…"
                           : "Approve Escrow"}
                   </button>
+<<<<<<< HEAD
                   {!!approveEscrowError && (
+=======
+                  {approveEscrowError && (
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
                     <p className="text-xs text-clay">{formatError(approveEscrowError)}</p>
                   )}
                   {(isApproveEscrowConfirmed || isEscrowApproved) && (

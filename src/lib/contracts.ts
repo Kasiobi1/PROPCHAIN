@@ -10,14 +10,27 @@
 // propchain-contracts repo before using this against real transactions.
 export const CONTRACT_ADDRESSES = {
   assetNFT: "0x7e9fbA952be652BD67e49F5FfBC57bdD84fc30c6",
+<<<<<<< HEAD
   marketplace: "0xc12ED9316A66a8e405072621EEc6A7a7CE014cfC",
   escrowHold: "0x127802Ac07B5F0C1E5E4E77D69526a647De45B87",
 } as const;
 
 export const BASE_SEPOLIA_CHAIN_ID: number = 84532;
 export const BASE_MAINNET_CHAIN_ID: number = 8453;
+=======
+  marketplace: "0xc12ED9316A66a8e405072621EEc6A7a7CE014cfC0",
+  escrowHold: "0x127802Ac07B5F0C1E5E4E77D69526a647De45B87",
+} as const;
+
+export const BASE_SEPOLIA_CHAIN_ID = 84532;
+export const BASE_MAINNET_CHAIN_ID = 8453;
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
 
 // Active chain for the app — swap to BASE_MAINNET_CHAIN_ID once ready for
 // real funds. Kept as a single source of truth so hooks/routes don't need
 // per-file edits when switching.
+<<<<<<< HEAD
 export const ACTIVE_CHAIN_ID: number = BASE_SEPOLIA_CHAIN_ID;
+=======
+export const ACTIVE_CHAIN_ID = BASE_SEPOLIA_CHAIN_ID;
+>>>>>>> 96f257475954d296762a20fc7fce526f8e695bdf
